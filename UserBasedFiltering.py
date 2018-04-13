@@ -95,36 +95,4 @@ class UserBasedFilteringRecommender:
                     if(j in self.usersItemRatings[i[0]].keys()):
                         weight+=self.usersItemRatings[i[0]][j]*i[1]
                 final[j]=round(weight,2)
-            return final        
-            
-                        
-            
-        
-            
-            
-        
-            
-        
-                    
-            
-                
-        
-                
-                        
-                
-        
-        # YOUR CODE HERE
-        
-        # for given userX, get the sorted list of users - by most similar to least similar        
-        
-        # calcualte the weighted average item recommendations for userX from userX's k NNs
-        
-        # return sorted list of recommendations (sorted highest to lowest ratings)
-        # example: [('Broken Bells', 2.64), ('Vampire Weekend', 2.2), ('Deadmau5', 1.71)]
-        
-        # once you are done coding this method, delete the pass statement below
-        pass
-
-
-
-        
+            return final            

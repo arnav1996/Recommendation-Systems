@@ -1,14 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Assignment 3
-"""
-
-print ()
-
-##################################
-# data set for collaborative filtering 
-##################################
-     
+    
 songData = {"Angelica": {"Blues Traveler": 3.5, "Broken Bells": 2.0, "Norah Jones": 4.5, "Phoenix": 5.0, "Slightly Stoopid": 1.5, "The Strokes": 2.5, "Vampire Weekend": 2.0},
          "Bill":{"Blues Traveler": 2.0, "Broken Bells": 3.5, "Deadmau5": 4.0, "Phoenix": 2.0, "Slightly Stoopid": 3.5, "Vampire Weekend": 3.0},
          "Chan": {"Blues Traveler": 5.0, "Broken Bells": 1.0, "Deadmau5": 1.0, "Norah Jones": 3.0, "Phoenix": 5, "Slightly Stoopid": 1.0},
@@ -19,17 +9,12 @@ songData = {"Angelica": {"Blues Traveler": 3.5, "Broken Bells": 2.0, "Norah Jone
          "Veronica": {"Blues Traveler": 3.0, "Norah Jones": 5.0, "Phoenix": 4.0, "Slightly Stoopid": 2.5, "The Strokes": 3.0}
         }
 
-###################################
-## User Based filtering 
-###################################
-
 # import UserBasedFiltering module
 from UserBasedFiltering import UserBasedFilteringRecommender
 
 print ()
 
 # pearson NN
-# Answer should match NN Slide 25 in User Based Recommendation Systems lecture
 ubf = UserBasedFilteringRecommender(songData)
 print ("------------------------------")
 print ("UBF NN Pearson Recommendations")
@@ -40,7 +25,6 @@ for user in songData.keys():
 print ()
 
 # pearson KNN with k=3
-# Answer should match KNN Slide 29 in User Based Recommendation Systems lecture
 ubf = UserBasedFilteringRecommender(songData, k=3)
 print ("-------------------------------------")
 print ("UBF KNN (k=3) Pearson Recommendations")
